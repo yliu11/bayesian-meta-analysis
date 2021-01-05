@@ -3,8 +3,8 @@
 
 rm(list = ls())
 
+# !!! IMPORTANT !!! JAGS needs to be installed prior to running this script: http://mcmc-jags.sourceforge.net/
 # Load packages; install R packages as needed:
-# JAGS needs to be installed prior to running this script: http://mcmc-jags.sourceforge.net/
 meta_packs <- c('rjags', 'coda', 'mcmcplots', 'R2jags')
 new.packages <- meta_packs[!(meta_packs %in% installed.packages()[,"Package"])]
 if(length(new.packages)) install.packages(new.packages)
