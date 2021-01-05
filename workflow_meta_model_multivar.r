@@ -14,8 +14,6 @@ lapply(meta_packs, require, character.only = T)
 record_input <- read.csv('./data/record_level_input.csv')
 attach(record_input)
 
-sites <- read.csv('./data/Site_info.csv')[,c('Site.Number', 'MAT2', 'MAP2', 'MAT.WorldClim2', 'MAP.WorldClim2')]
-
 study_input <- read.csv('./data/study_level_input.csv')
 attach(study_input)
 
